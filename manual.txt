@@ -1,0 +1,32 @@
+SDL Tilemap Editor
+
+Manual
+
+
+
+-= Controls =-
+
+Use 1 and 2 to scroll left and right, respectively, through the map's tile palette.
+
+Use B to switch between the foreground and background layers of the map.
+
+Use the arrow keys to move the cursor around the map.
+
+Press S and then type a file name for the map to be saved.
+
+Note : Only letters and the decimal point '.' will work as of right now.
+
+Use Enter to place a tile on the cursor's position.
+
+
+-= Layout =-
+
+In the top left when starting up the map editor you should see text reading "x <some coordinate> y <some coordinate>".
+This is your cursor's position on the map and helps you to find your cursor.
+
+Below that is the map screen. Your cursor will be displayed as whatever tile you have selected.
+
+To the right of the coordinates if you are currently on the background layer of the map, a message reading "BACKGROUND" will appear on the screen.
+
+On the right is your tile palette. These are all of the tiles used in the map.
+
