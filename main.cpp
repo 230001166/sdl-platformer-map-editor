@@ -47,6 +47,9 @@ void loadMap (std::string filename, Map &worldmap) {
 
         }
 
+        file >> worldmap.playerXOffset;
+        file >> worldmap.playerYOffset;
+
         file.close();
 
     } else std::cout << "Unable to open file";
@@ -79,6 +82,9 @@ void saveMap (std::string filename, Map worldmap) {
             file << worldmap.backgroundTileArray [i] << "\n";
 
         }
+
+        file << worldmap.playerXOffset << "\n";
+        file << worldmap.playerYOffset << "\n";
 
         file.close();
 
@@ -175,6 +181,12 @@ int main ( int argc, char* args[] ) {
                                 isOnBackgroundLayer = true;
 
                             }
+
+                        }
+                        case SDLK_x: {
+
+                            worldmap.playerXOffset = cursorX - 32;
+                            worldmap.playerYOffset = cursorY - 32;
 
                         }
                         default: break;
